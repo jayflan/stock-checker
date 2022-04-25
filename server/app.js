@@ -2,7 +2,7 @@ const express = require("express");
 const path = require("path");
 const app = express();
 
-//api routes
+// api routes
 // app.use("/api", require("./api"));
 
 //static file-serving middleware
