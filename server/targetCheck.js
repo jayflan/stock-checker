@@ -38,8 +38,11 @@ const timeOut = (ms) => {
     }
   
     const stockData = (await axios.get(apiUrl, { params: axiosParams })).data
+    // const stockNotifyMe = stockData.data.product.notify_me_enabled;
+    // const stockCheck = stockData.data['product']['fulfillment']
     const storeData = stockData.data['product']['fulfillment']['store_options'];
     console.log('api data check--->', storeData);
+    // console.log('Is NotifyMe button active?---->', stockNotifyMe)
     
     const stockInfo = storeData.reduce((acc, store) => {
       //eval. if response/json item is in stock

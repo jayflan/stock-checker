@@ -25,6 +25,8 @@
     "express": "^4.17.3",
     "nodemailer": "^6.7.3",
     "nodemailer-ses-transport": "^1.5.1",
-    "puppeteer": "^13.6.0"
+    "puppeteer": "^13.6.0",
+    "puppeteer-extra": "^3.2.3",
+    "puppeteer-extra-plugin-stealth": "^2.9.0"
   }
 }
